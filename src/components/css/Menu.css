@@ -1,0 +1,40 @@
+header {
+   margin-bottom: 57px;
+}
+
+nav {
+   /* 메뉴 고정 */
+   position: fixed;
+   width: 100%;
+   background-color: #333;
+   height: 57px;
+   z-index: 99999;
+}
+
+ul {
+   width: 1200px;
+   margin: 0 auto;
+   list-style-type: none;
+   overflow: hidden;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 16.3px 20px;
+   text-decoration: none;
+}
+
+/* 첫번째 li 제외, active 클래스 있는 a 요소 제외 */
+li:not(:first-child) a:hover:not(.active) {
+   background-color: #4d4c4c;
+}
+
+.login {
+   background-color: #448ada;
+}
